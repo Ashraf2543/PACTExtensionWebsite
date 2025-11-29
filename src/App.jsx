@@ -17,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            {/* Add catch-all route for Netlify SPA */}
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
         <Footer />
