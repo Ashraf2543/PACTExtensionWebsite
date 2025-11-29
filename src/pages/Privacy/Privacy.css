@@ -1,0 +1,113 @@
+.privacy-page {
+  padding: var(--spacing-3xl) 0;
+  background: var(--gray-50);
+  min-height: 100vh;
+}
+
+.privacy__header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.privacy__back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: var(--spacing-xl);
+  transition: color var(--transition-fast);
+}
+
+.privacy__back-link:hover {
+  color: var(--primary-dark);
+}
+
+.privacy__title {
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-md);
+}
+
+.privacy__last-updated {
+  color: var(--gray-500);
+  font-size: var(--font-size-lg);
+}
+
+.privacy__content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: var(--spacing-3xl);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+}
+
+.privacy__section {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.privacy__section:last-child {
+  margin-bottom: 0;
+}
+
+.privacy__section h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.privacy__section p {
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+.privacy__section ul {
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+}
+
+.privacy__section li {
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+}
+
+.privacy__section li::before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: -var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .privacy-page {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .privacy__content {
+    padding: var(--spacing-xl);
+  }
+  
+  .privacy__title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy__content {
+    padding: var(--spacing-lg);
+  }
+  
+  .privacy__title {
+    font-size: var(--font-size-2xl);
+  }
+}
